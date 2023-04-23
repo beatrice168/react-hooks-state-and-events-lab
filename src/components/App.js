@@ -12,13 +12,15 @@ const [isLight,setIsLight]=useState(false);
     setIsLight( (isLight)=>!isLight)
   }
   return (
-    <div className={appClass}>
+  
+    <div className={"App "  +appClass}>
       <header>
         <h2>Shopster</h2>
         <button onClick={handleClick}>{isLight?"Dark Mode" : "Light Mode"}</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
+    
   );
 }
 
